@@ -36,8 +36,6 @@ O sensor MQ2 foi conectado à placa ESP32 da seguinte forma:
 | GND                | GND           |
 | AOUT               | GPIO34        |
 
-📷 **Imagem do circuito:**  
-/imagens/circuito.png
 
 ---
 
@@ -73,17 +71,11 @@ void loop() {
 A leitura é feita com `analogRead()`, convertendo a leitura analógica (0 a 4095) em tensão (0 a 3.3V).  
 A concentração de gás é ajustável manualmente pelo controle deslizante (slider) do sensor no Wokwi, simulando diferentes cenários industriais.
 
-📷 **Print do Serial Monitor:**  
-/imagens/serial_monitor.png
-
 ---
 
 ## 📊 Análise Gráfica
 
 Os dados foram copiados do Serial Monitor, tratados em Python com `pandas` e visualizados com `matplotlib`.
-
-📈 **Gráfico gerado:**  
-/analise/grafico_sensor_gas.png
 
 ---
 
